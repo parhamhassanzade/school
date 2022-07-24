@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import StudentView from "../views/StudentView.vue";
 import TeachersView from "../views/TeachersView.vue";
+import SingleUser from "../views/SingleUser.vue";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -21,6 +23,7 @@ const routes = [
     name: "Student",
     component: StudentView,
   },
+  { path: "/single/:category/:id", name: "single", component: SingleUser },
 ];
 
 const router = new VueRouter({

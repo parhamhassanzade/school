@@ -1,7 +1,7 @@
 import teacher from "../data/teacher.js";
-import students from "../data/students.js";
+import student from "../data/student.js";
 
 export default {
   teacher,
-  students,
+  student,
 };

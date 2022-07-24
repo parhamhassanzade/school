@@ -3,7 +3,7 @@
     <div>
       <b-table striped hover :items="students">
         <template v-slot:cell(first_name)="data">
-          <router-link to="/">
+          <router-link :to="`/single/student/${data.index}`">
             {{ data.value }}
           </router-link>
         </template>
